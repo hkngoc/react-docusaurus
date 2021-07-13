@@ -1,5 +1,5 @@
 import useDocusaurusContext from 'theme-core/useDocusaurusContext';
-import useBaseUrl from 'theme-core/useBaseUrl';
+import useBaseUrl, { addBaseUrl } from 'theme-core/useBaseUrl';
 
 import Link from 'theme-core/Link';
 import ThemedImage from 'theme-classic/ThemedImage';
@@ -14,6 +14,8 @@ const Logo = (props) => {
           logo = { src: ''}
         },
       },
+      baseUrl = '/',
+      url: siteUrl,
     },
     isClient,
   } = useDocusaurusContext();
@@ -21,9 +23,10 @@ const Logo = (props) => {
   const { imageClassName, titleClassName, ...propsRest } = props;
   const logoLink = useBaseUrl(logo.href || '/');
   const sources = {
-    light: useBaseUrl(logo.src),
-    dark: useBaseUrl(logo.srcDark || logo.src),
+    light: (typeof (logo.src) == "string") ? addBaseUrl(siteUrl, baseUrl, logo.src) : logo.src,
+    dark: (typeof (logo.srcDark) == "string" || typeof (logo.src) == "string") ? addBaseUrl(siteUrl, baseUrl, logo.srcDark || logo.src) : (logo.srcDark || logo.src),
   };
+
 
   return (
     <Link
@@ -31,14 +34,21 @@ const Logo = (props) => {
       {...propsRest}
       {...(logo.target && {target: logo.target})}
     >
-      {logo.src && (
-        <ThemedImage
-          key={isClient}
-          className={imageClassName}
-          sources={sources}
-          alt={logo.alt || navbarTitle || title}
-        />
-      )}
+      {
+        logo.src && typeof (logo.src) == "string" && (
+          <ThemedImage
+            key={isClient}
+            className={imageClassName}
+            sources={sources}
+            alt={logo.alt || navbarTitle || title}
+          />
+        )
+      }
+      {
+        typeof (logo.src) == "function" && (
+          <logo.src className={imageClassName} />
+        )
+      }
       {navbarTitle != null && <b className={titleClassName}>{navbarTitle}</b>}
     </Link>
   );

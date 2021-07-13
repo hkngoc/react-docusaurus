@@ -1,3 +1,5 @@
+import Logo from 'components/Logo';
+
 const config = {
   isClient: true,
   siteConfig: {
@@ -16,7 +18,7 @@ const config = {
       navbar: {
         title: 'Docusaurus',
         logo: {
-          src: 'static/img/logo.svg',
+          src: Logo,
           alt: 'My Site Logo',
         },
         hideOnScroll: false,

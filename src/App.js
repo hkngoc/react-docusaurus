@@ -11,6 +11,8 @@ import Home from 'pages/Home';
 import Docs from 'pages/Docs';
 
 import config from 'docusaurus.config';
+
+import 'theme-classic/styles.css';
 import './App.css';
 
 // Need implement Falback frist

@@ -1,7 +1,7 @@
 import useDocusaurusContext from './useDocusaurusContext';
 import { hasProtocol } from './isInternalUrl';
 
-const addBaseUrl = (siteUrl, baseUrl, url, { forcePrependBaseUrl = false, absolute = false } = {}) => {
+export const addBaseUrl = (siteUrl, baseUrl, url, { forcePrependBaseUrl = false, absolute = false } = {}) => {
   if (!url) {
       return url;
   }
