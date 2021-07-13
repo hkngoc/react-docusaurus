@@ -7,5 +7,5 @@ import './index.css';
 
 ReactDOM.render(
     <App />,
-  document.getElementById('__docusaurus')
+  document.getElementById('root')
 );

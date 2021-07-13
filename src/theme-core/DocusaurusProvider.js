@@ -15,7 +15,9 @@ const DocusaurusProvider = ({ config, children }) => {
         ..._config
       }}
     >
-      {children}
+      <div id="__docusaurus">
+        {children}
+      </div>
     </DocusaurusContext.Provider>
   );
 };
