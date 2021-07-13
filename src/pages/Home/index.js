@@ -1,6 +1,10 @@
+import Layout from 'theme-classic/Layout';
+
 const Home = () => {
   return (
-    <code>Home</code>
+    <Layout>
+      <code>Home</code>
+    </Layout>
   );
 };
 

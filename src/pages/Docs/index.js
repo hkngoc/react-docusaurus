@@ -1,18 +1,28 @@
 import {
   Switch,
   Route,
-  Redirect,
+  // Redirect,
 } from 'react-router-dom';
+
+import DocPage from 'theme-classic/DocPage';
 
 import Overview from 'pages/Docs/Overview';
 
-const Docs = () => {
-  return (
-    <Switch>
-      <Route path="/docs/overview" name="Overview" component={Overview} />
+import sidebars from 'pages/sidebars';
+import routes from 'pages/routes';
 
-      <Redirect from="/docs" to="/docs/overview" />
-    </Switch>
+const Docs = (props) => {
+  return (
+    <DocPage
+      sidebars={sidebars}
+      routes={routes}
+    >
+      <Switch>
+        <Route path="/docs" name="Overview" component={Overview} />
+
+        {/* <Redirect from="/docs" to="/docs/cli" /> */}
+      </Switch>
+    </DocPage>
   );
 };
 

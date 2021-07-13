@@ -5,7 +5,7 @@ import {
   Route,
 } from 'react-router-dom';
 
-import Layout from 'theme-classic/Layout';
+import DocusaurusProvider from 'theme-core/DocusaurusProvider';
 
 import Home from 'pages/Home';
 import Docs from 'pages/Docs';
@@ -20,7 +20,7 @@ import './App.css';
 const App = () => {
   return (
     <Router>
-      <Layout
+      <DocusaurusProvider
         config={config}
       >
         <Switch>
@@ -28,7 +28,7 @@ const App = () => {
 
           <Route path="/" name="Home" component={Home} />
         </Switch>
-      </Layout>
+      </DocusaurusProvider>
     </Router>
   );
 };

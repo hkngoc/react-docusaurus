@@ -5,6 +5,7 @@ const config = {
       colorMode: {
         defaultMode: 'dark',
         disableSwitch: false,
+        respectPrefersColorScheme: true,
         switchConfig: {
           darkIcon: '🌜',
           darkIconStyle: {},
@@ -21,13 +22,13 @@ const config = {
         hideOnScroll: false,
         items: [{
           type: 'doc',
-          docId: 'intro',
+          // docId: 'intro',
           position: 'left',
           label: 'Docs',
           to: '/docs'
         }],
       },
-      hideableSidebar: false,
+      hideableSidebar: true,
     }
   },
 };

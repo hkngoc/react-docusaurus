@@ -3,6 +3,7 @@ export const isSamePath = (path1, path2) => {
     return !pathname || pathname?.endsWith('/') ? pathname : `${pathname}/`;
   };
 
+  // console.log("item.href", path1, path2);
   return normalize(path1) === normalize(path2);
 };
 
