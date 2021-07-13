@@ -117,7 +117,17 @@ const DocPageContent = ({ children, ...props }) => {
               )
             }
           >
-            { children }
+            <div className="row">
+              <div
+                className={clsx('col', {
+                  docItemCol: false,
+                })}
+              >
+                <div className={"docItemContainer"}>
+                  {children}
+                </div>
+              </div>
+            </div>
           </div>
         </main>
       </div>

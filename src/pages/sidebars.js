@@ -137,22 +137,22 @@ const sidebars = {
           items: [
             {
               type: 'doc',
-              id: 'i18n/introduction',
+              href: 'i18n/introduction',
               label: 'Introduction',
             },
             {
               type: 'doc',
-              id: 'i18n/tutorial',
+              href: 'i18n/tutorial',
               label: 'Tutorial',
             },
             {
               type: 'doc',
-              id: 'i18n/git',
+              href: 'i18n/git',
               label: 'Using Git',
             },
             {
               type: 'doc',
-              id: 'i18n/crowdin',
+              href: 'i18n/crowdin',
               label: 'Using Crowdin',
             },
           ],

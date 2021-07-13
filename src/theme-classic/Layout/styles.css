@@ -1,5 +1,4 @@
 /* base admonitions variables of off infima variables */
-
 :root {
     --ra-admonition-background-color: var(--ifm-alert-background-color);
     --ra-admonition-border-width: var(--ifm-alert-border-width);
@@ -16,9 +15,7 @@
     --ra-color-text-dark: var(--ifm-color-gray-900);
 }
 
-
 /* apply variables to admonitions */
-
 .admonition {
     margin-bottom: 1em;
 }
@@ -57,13 +54,11 @@
     stroke: var(--ra-admonition-icon-color);
 }
 
-.admonition-content> :last-child {
+.admonition-content > :last-child {
     margin-bottom: 0;
 }
 
-
 /* set variables based on admonition type */
-
 .admonition {
     --ra-admonition-icon-color: var(--ra-admonition-color);
 }
@@ -72,33 +67,25 @@
     --ra-admonition-color: var(--ra-color-text-dark);
 }
 
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
-
 /* Common */
-
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 :root {
     /* Colors. */
     --ifm-dark-value: 10%;
@@ -318,7 +305,7 @@
     --ifm-button-padding-vertical: 0.375rem;
     --ifm-button-size-multiplier: 1;
     --ifm-button-transition-duration: var(--ifm-transition-fast);
-    --ifm-button-border-radius: calc( var(--ifm-global-radius) * var(--ifm-button-size-multiplier));
+    --ifm-button-border-radius: calc( var(--ifm-global-radius) * var(--ifm-button-size-multiplier) );
     --ifm-button-group-margin: 2px;
     --ifm-card-background-color: var(--ifm-background-surface-color);
     --ifm-card-border-radius: calc(var(--ifm-global-radius) * 2);
@@ -365,7 +352,7 @@
     --ifm-navbar-search-input-placeholder-color: var(--ifm-color-emphasis-500);
     --ifm-navbar-search-input-icon: url('data:image/svg+xml;utf8,<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" height="16px" width="16px"><path d="M6.02945,10.20327a4.17382,4.17382,0,1,1,4.17382-4.17382A4.15609,4.15609,0,0,1,6.02945,10.20327Zm9.69195,4.2199L10.8989,9.59979A5.88021,5.88021,0,0,0,12.058,6.02856,6.00467,6.00467,0,1,0,9.59979,10.8989l4.82338,4.82338a.89729.89729,0,0,0,1.29912,0,.89749.89749,0,0,0-.00087-1.29909Z" /></svg>');
     --ifm-navbar-sidebar-width: 80vw;
-    --ifm-pagination-border-radius: calc( var(--ifm-global-radius) * var(--ifm-pagination-size-multiplier));
+    --ifm-pagination-border-radius: calc( var(--ifm-global-radius) * var(--ifm-pagination-size-multiplier) );
     --ifm-pagination-color-active: var(--ifm-color-primary);
     --ifm-pagination-font-size: 1rem;
     --ifm-pagination-item-active-background: var(--ifm-hover-overlay);
@@ -385,14 +372,12 @@
     --ifm-tabs-spacing: 0.0625rem;
 }
 
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 * {
     box-sizing: border-box;
 }
@@ -412,17 +397,13 @@ body {
     word-wrap: break-word;
 }
 
-
 /* Layout */
-
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 .container {
     margin: 0 auto;
     max-width: var(--ifm-container-width);
@@ -580,7 +561,7 @@ body {
     margin-right: 0;
 }
 
-.row--no-gutters>.col {
+.row--no-gutters > .col {
     padding-left: 0;
     padding-right: 0;
 }
@@ -605,14 +586,12 @@ body {
     align-items: baseline;
 }
 
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 .margin--none {
     margin: 0 !important;
 }
@@ -973,17 +952,13 @@ body {
     padding-right: 5rem !important;
 }
 
-
 /* Content */
-
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 code {
     background-color: var(--ifm-code-background);
     border: 0.1rem solid rgba(0, 0, 0, 0.1);
@@ -1026,20 +1001,13 @@ kbd {
     padding: 0.15rem 0.3rem;
 }
 
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     color: var(--ifm-heading-color);
     font-weight: var(--ifm-heading-font-weight);
     line-height: var(--ifm-heading-line-height);
@@ -1070,14 +1038,12 @@ h6 {
     font-size: var(--ifm-h6-font-size);
 }
 
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 img {
     border-style: none;
     box-sizing: content-box;
@@ -1092,14 +1058,12 @@ img[align='left'] {
     padding-right: var(--image-alignment-padding);
 }
 
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 .markdown {
     --ifm-h1-vertical-rhythm-top: 3;
     --ifm-h2-vertical-rhythm-top: 2;
@@ -1120,45 +1084,39 @@ img[align='left'] {
     display: table;
 }
 
-.markdown>*:first-child {
+.markdown > *:first-child {
     margin-top: 0 !important;
 }
 
-.markdown>*:last-child {
+.markdown > *:last-child {
     margin-bottom: 0 !important;
 }
 
-.markdown>h1 {
+.markdown > h1 {
     --ifm-h1-font-size: 3rem;
-    margin-bottom: calc( var(--ifm-h1-vertical-rhythm-bottom) * var(--ifm-leading));
+    margin-bottom: calc( var(--ifm-h1-vertical-rhythm-bottom) * var(--ifm-leading) );
     margin-top: calc(var(--ifm-h1-vertical-rhythm-top) * var(--ifm-leading));
 }
 
-.markdown>h2 {
+.markdown > h2 {
     --ifm-h2-font-size: 2rem;
-    margin-bottom: calc( var(--ifm-heading-vertical-rhythm-bottom) * var(--ifm-leading));
+    margin-bottom: calc( var(--ifm-heading-vertical-rhythm-bottom) * var(--ifm-leading) );
     margin-top: calc(var(--ifm-h2-vertical-rhythm-top) * var(--ifm-leading));
 }
 
-.markdown>h3 {
+.markdown > h3 {
     --ifm-h3-font-size: 1.5rem;
-    margin-bottom: calc( var(--ifm-heading-vertical-rhythm-bottom) * var(--ifm-leading));
+    margin-bottom: calc( var(--ifm-heading-vertical-rhythm-bottom) * var(--ifm-leading) );
     margin-top: calc(var(--ifm-h3-vertical-rhythm-top) * var(--ifm-leading));
 }
 
-.markdown>h4,
-.markdown>h5,
-.markdown>h6 {
-    margin-bottom: calc( var(--ifm-heading-vertical-rhythm-bottom) * var(--ifm-leading));
-    margin-top: calc( var(--ifm-heading-vertical-rhythm-top) * var(--ifm-leading));
+.markdown > h4, .markdown > h5, .markdown > h6 {
+    margin-bottom: calc( var(--ifm-heading-vertical-rhythm-bottom) * var(--ifm-leading) );
+    margin-top: calc( var(--ifm-heading-vertical-rhythm-top) * var(--ifm-leading) );
 }
 
-
 /* Consistent spacing between content paragraphs. */
-
-.markdown>pre,
-.markdown>ul,
-.markdown>p {
+.markdown > pre, .markdown > ul, .markdown > p {
     margin-bottom: var(--ifm-leading);
 }
 
@@ -1166,14 +1124,13 @@ img[align='left'] {
     word-wrap: break-word;
 }
 
-.markdown li>p {
+.markdown li > p {
     margin-top: var(--ifm-list-paragraph-margin);
 }
 
-.markdown li+li {
+.markdown li + li {
     margin-top: var(--ifm-list-item-margin);
 }
-
 
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -1181,35 +1138,23 @@ img[align='left'] {
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
-
 /* Lists */
-
-ul,
-ol {
+ul, ol {
     margin: 0 0 var(--ifm-list-margin);
     padding-left: var(--ifm-list-left-padding);
 }
 
-ol ol,
-ul ol {
+ol ol, ul ol {
     list-style-type: lower-roman;
 }
 
-ul ul,
-ul ol,
-ol ol,
-ol ul {
+ul ul, ul ol, ol ol, ol ul {
     margin: 0;
 }
 
-ul ul ol,
-ul ol ol,
-ol ul ol,
-ol ol ol {
+ul ul ol, ul ol ol, ol ul ol, ol ol ol {
     list-style-type: lower-alpha;
 }
-
 
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -1217,7 +1162,6 @@ ol ol ol {
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 table {
     border-collapse: collapse;
     display: block;
@@ -1241,8 +1185,7 @@ table tr:nth-child(2n) {
     background-color: var(--ifm-table-stripe-background);
 }
 
-table th,
-table td {
+table th, table td {
     border: var(--ifm-table-border-width) solid var(--ifm-table-border-color);
     padding: var(--ifm-table-cell-padding);
 }
@@ -1257,21 +1200,17 @@ table td {
     color: var(--ifm-table-cell-color);
 }
 
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 strong {
     font-weight: var(--ifm-font-weight-bold);
 }
 
-
 /* Links */
-
 a {
     color: var(--ifm-link-color);
     /* autoprefixer: ignore next */
@@ -1289,16 +1228,12 @@ a:not([href]) {
     text-decoration: none;
 }
 
-
 /* Paragraphs */
-
 p {
     margin: 0 0 var(--ifm-paragraph-margin-bottom);
 }
 
-
 /* Blockquotes */
-
 blockquote {
     border-left: 6px solid var(--ifm-color-emphasis-300);
     color: var(--ifm-blockquote-color);
@@ -1307,17 +1242,15 @@ blockquote {
     padding: var(--ifm-blockquote-padding-vertical) var(--ifm-blockquote-padding-horizontal);
 }
 
-blockquote> :first-child {
+blockquote > :first-child {
     margin-top: 0;
 }
 
-blockquote> :last-child {
+blockquote > :last-child {
     margin-bottom: 0;
 }
 
-
 /* Horizontal Rules */
-
 hr {
     border-color: var(--ifm-hr-border-color);
     border-style: solid;
@@ -1338,17 +1271,13 @@ hr:after {
     display: table;
 }
 
-
 /* Utilities */
-
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 .shadow--lw {
     box-shadow: var(--ifm-global-shadow-lw) !important;
 }
@@ -1361,14 +1290,12 @@ hr:after {
     box-shadow: var(--ifm-global-shadow-tl) !important;
 }
 
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 .text--primary {
     color: var(--ifm-color-primary);
 }
@@ -1452,27 +1379,22 @@ hr:after {
     word-break: break-word !important;
 }
 
-.text--no-decoration,
-.text--no-decoration:hover {
+.text--no-decoration, .text--no-decoration:hover {
     text-decoration: none;
 }
 
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 .clean-btn {
     background: none;
     border: none;
@@ -1481,17 +1403,13 @@ hr:after {
     padding: 0;
 }
 
-
 /* Components */
-
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 .alert {
     background-color: var(--ifm-alert-background-color);
     border-color: var(--ifm-alert-border-color);
@@ -1542,14 +1460,12 @@ hr:after {
     margin: calc(var(--ifm-alert-padding-vertical) * -1) calc(var(--ifm-alert-padding-horizontal) * -1) 0 0;
 }
 
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 .avatar {
     display: flex;
 }
@@ -1580,7 +1496,7 @@ hr:after {
     width: var(--ifm-avatar-photo-size-xl);
 }
 
-.avatar__photo+.avatar__intro {
+.avatar__photo + .avatar__intro {
     margin-left: var(--ifm-avatar-intro-margin);
 }
 
@@ -1612,14 +1528,12 @@ hr:after {
     /* Reset the margin added in the horizontal layout. */
 }
 
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 .badge {
     background-color: var(--ifm-badge-background-color);
     border: var(--ifm-badge-border-width) solid var(--ifm-badge-border-color);
@@ -1663,14 +1577,12 @@ hr:after {
     --ifm-badge-border-color: var(--ifm-badge-background-color);
 }
 
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 .breadcrumbs {
     margin-bottom: 0;
     padding-left: 0;
@@ -1693,10 +1605,10 @@ hr:after {
     content: ' ';
     display: inline-block;
     filter: var(--ifm-breadcrumb-separator-filter);
-    height: calc( var(--ifm-breadcrumb-separator-size) * var(--ifm-breadcrumb-size-multiplier) * var(--ifm-breadcrumb-separator-size-multiplier));
+    height: calc( var(--ifm-breadcrumb-separator-size) * var(--ifm-breadcrumb-size-multiplier) * var(--ifm-breadcrumb-separator-size-multiplier) );
     margin: 0 0.5rem;
     opacity: 0.5;
-    width: calc( var(--ifm-breadcrumb-separator-size) * var(--ifm-breadcrumb-size-multiplier) * var(--ifm-breadcrumb-separator-size-multiplier));
+    width: calc( var(--ifm-breadcrumb-separator-size) * var(--ifm-breadcrumb-size-multiplier) * var(--ifm-breadcrumb-separator-size-multiplier) );
 }
 
 .breadcrumbs__item--active .breadcrumbs__link {
@@ -1713,7 +1625,7 @@ hr:after {
     color: var(--ifm-font-color-base);
     display: inline-block;
     font-size: calc(1rem * var(--ifm-breadcrumb-size-multiplier));
-    padding: calc( var(--ifm-breadcrumb-padding-vertical) * var(--ifm-breadcrumb-size-multiplier)) calc( var(--ifm-breadcrumb-padding-horizontal) * var(--ifm-breadcrumb-size-multiplier));
+    padding: calc( var(--ifm-breadcrumb-padding-vertical) * var(--ifm-breadcrumb-size-multiplier) ) calc( var(--ifm-breadcrumb-padding-horizontal) * var(--ifm-breadcrumb-size-multiplier) );
     transition-property: background, color;
     transition-duration: var(--ifm-transition-fast);
     transition-timing-function: var(--ifm-transition-timing-default);
@@ -1731,14 +1643,12 @@ hr:after {
     --ifm-breadcrumb-size-multiplier: 1.2;
 }
 
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 .button {
     background-color: var(--ifm-button-background-color);
     border-color: var(--ifm-button-border-color);
@@ -1751,7 +1661,7 @@ hr:after {
     font-size: calc(0.875rem * var(--ifm-button-size-multiplier));
     font-weight: var(--ifm-button-font-weight);
     line-height: 1.5;
-    padding: calc( var(--ifm-button-padding-vertical) * var(--ifm-button-size-multiplier)) calc( var(--ifm-button-padding-horizontal) * var(--ifm-button-size-multiplier));
+    padding: calc( var(--ifm-button-padding-vertical) * var(--ifm-button-size-multiplier) ) calc( var(--ifm-button-padding-horizontal) * var(--ifm-button-size-multiplier) );
     text-align: center;
     -webkit-user-select: none;
     user-select: none;
@@ -1777,9 +1687,7 @@ hr:after {
     --ifm-button-background-color: var(--ifm-button-border-color);
 }
 
-.button--outline:hover,
-.button--outline:active,
-.button--outline.button--active {
+.button--outline:hover, .button--outline:active, .button--outline.button--active {
     --ifm-button-color: var(--ifm-font-color-base-inverse);
 }
 
@@ -1791,17 +1699,13 @@ hr:after {
     text-decoration: var(--ifm-link-decoration);
 }
 
-.button--link:hover,
-.button--link:active,
-.button--link.button--active {
+.button--link:hover, .button--link:active, .button--link.button--active {
     color: var(--ifm-link-hover-color);
     /* autoprefixer: ignore next */
     text-decoration: var(--ifm-link-hover-decoration);
 }
 
-.button.disabled,
-.button:disabled,
-.button[disabled] {
+.button.disabled, .button:disabled, .button[disabled] {
     opacity: 0.65;
     pointer-events: none;
 }
@@ -1840,16 +1744,13 @@ hr:after {
     --ifm-button-border-color: var(--ifm-color-primary-dark);
 }
 
-
 /* Increase specificity. */
-
-.button--primary:active,
-.button--primary.button--active {
+.button--primary:active, .button--primary.button--active {
     --ifm-button-border-color: var(--ifm-color-primary-darker);
     --ifm-button-background-color: var(--ifm-color-primary-darker);
-    background-color: var( --ifm-color-primary-darker);
+    background-color: var( --ifm-color-primary-darker );
     /* Has to be explicitly defined because .button--outline has quite high specificity. */
-    border-color: var( --ifm-color-primary-darker);
+    border-color: var( --ifm-color-primary-darker );
     /* Has to be explicitly defined because .button--outline has quite high specificity. */
 }
 
@@ -1866,16 +1767,13 @@ hr:after {
     --ifm-button-border-color: var(--ifm-color-secondary-dark);
 }
 
-
 /* Increase specificity. */
-
-.button--secondary:active,
-.button--secondary.button--active {
+.button--secondary:active, .button--secondary.button--active {
     --ifm-button-border-color: var(--ifm-color-secondary-darker);
     --ifm-button-background-color: var(--ifm-color-secondary-darker);
-    background-color: var( --ifm-color-secondary-darker);
+    background-color: var( --ifm-color-secondary-darker );
     /* Has to be explicitly defined because .button--outline has quite high specificity. */
-    border-color: var( --ifm-color-secondary-darker);
+    border-color: var( --ifm-color-secondary-darker );
     /* Has to be explicitly defined because .button--outline has quite high specificity. */
 }
 
@@ -1892,16 +1790,13 @@ hr:after {
     --ifm-button-border-color: var(--ifm-color-success-dark);
 }
 
-
 /* Increase specificity. */
-
-.button--success:active,
-.button--success.button--active {
+.button--success:active, .button--success.button--active {
     --ifm-button-border-color: var(--ifm-color-success-darker);
     --ifm-button-background-color: var(--ifm-color-success-darker);
-    background-color: var( --ifm-color-success-darker);
+    background-color: var( --ifm-color-success-darker );
     /* Has to be explicitly defined because .button--outline has quite high specificity. */
-    border-color: var( --ifm-color-success-darker);
+    border-color: var( --ifm-color-success-darker );
     /* Has to be explicitly defined because .button--outline has quite high specificity. */
 }
 
@@ -1918,16 +1813,13 @@ hr:after {
     --ifm-button-border-color: var(--ifm-color-info-dark);
 }
 
-
 /* Increase specificity. */
-
-.button--info:active,
-.button--info.button--active {
+.button--info:active, .button--info.button--active {
     --ifm-button-border-color: var(--ifm-color-info-darker);
     --ifm-button-background-color: var(--ifm-color-info-darker);
-    background-color: var( --ifm-color-info-darker);
+    background-color: var( --ifm-color-info-darker );
     /* Has to be explicitly defined because .button--outline has quite high specificity. */
-    border-color: var( --ifm-color-info-darker);
+    border-color: var( --ifm-color-info-darker );
     /* Has to be explicitly defined because .button--outline has quite high specificity. */
 }
 
@@ -1944,16 +1836,13 @@ hr:after {
     --ifm-button-border-color: var(--ifm-color-warning-dark);
 }
 
-
 /* Increase specificity. */
-
-.button--warning:active,
-.button--warning.button--active {
+.button--warning:active, .button--warning.button--active {
     --ifm-button-border-color: var(--ifm-color-warning-darker);
     --ifm-button-background-color: var(--ifm-color-warning-darker);
-    background-color: var( --ifm-color-warning-darker);
+    background-color: var( --ifm-color-warning-darker );
     /* Has to be explicitly defined because .button--outline has quite high specificity. */
-    border-color: var( --ifm-color-warning-darker);
+    border-color: var( --ifm-color-warning-darker );
     /* Has to be explicitly defined because .button--outline has quite high specificity. */
 }
 
@@ -1970,19 +1859,15 @@ hr:after {
     --ifm-button-border-color: var(--ifm-color-danger-dark);
 }
 
-
 /* Increase specificity. */
-
-.button--danger:active,
-.button--danger.button--active {
+.button--danger:active, .button--danger.button--active {
     --ifm-button-border-color: var(--ifm-color-danger-darker);
     --ifm-button-background-color: var(--ifm-color-danger-darker);
-    background-color: var( --ifm-color-danger-darker);
+    background-color: var( --ifm-color-danger-darker );
     /* Has to be explicitly defined because .button--outline has quite high specificity. */
-    border-color: var( --ifm-color-danger-darker);
+    border-color: var( --ifm-color-danger-darker );
     /* Has to be explicitly defined because .button--outline has quite high specificity. */
 }
-
 
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -1990,23 +1875,22 @@ hr:after {
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 .button-group {
     display: inline-flex;
 }
 
-.button-group>.button:not(:first-child) {
+.button-group > .button:not(:first-child) {
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
     margin-left: var(--ifm-button-group-margin);
 }
 
-.button-group>.button:not(:last-child) {
+.button-group > .button:not(:last-child) {
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
 }
 
-.button-group>.button--active {
+.button-group > .button--active {
     z-index: 1;
     /* Make the active button's border take precedence. */
 }
@@ -2016,10 +1900,9 @@ hr:after {
     justify-content: stretch;
 }
 
-.button-group--block>.button {
+.button-group--block > .button {
     flex-grow: 1;
 }
-
 
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -2027,7 +1910,6 @@ hr:after {
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 .card {
     background-color: var(--ifm-card-background-color);
     border-radius: var(--ifm-card-border-radius);
@@ -2037,9 +1919,7 @@ hr:after {
     overflow: hidden;
 }
 
-
 /* Because of border-radius. */
-
 .card--full-height {
     height: 100%;
 }
@@ -2052,21 +1932,15 @@ hr:after {
     padding-top: 0;
 }
 
-.card__header,
-.card__body,
-.card__footer {
+.card__header, .card__body, .card__footer {
     padding: var(--ifm-card-vertical-spacing) var(--ifm-card-horizontal-spacing);
 }
 
-.card__header:not(:last-child),
-.card__body:not(:last-child),
-.card__footer:not(:last-child) {
+.card__header:not(:last-child), .card__body:not(:last-child), .card__footer:not(:last-child) {
     padding-bottom: 0;
 }
 
-.card__header> :last-child,
-.card__body> :last-child,
-.card__footer> :last-child {
+.card__header > :last-child, .card__body > :last-child, .card__footer > :last-child {
     margin-bottom: 0;
 }
 
@@ -2075,22 +1949,19 @@ hr:after {
     /* Pushes the footer to the bottom of the card. */
 }
 
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 .table-of-contents {
     font-size: 0.8rem;
     margin-bottom: 0;
     padding: var(--ifm-toc-padding-vertical) 0;
 }
 
-.table-of-contents,
-.table-of-contents ul {
+.table-of-contents, .table-of-contents ul {
     list-style-type: none;
     padding-left: var(--ifm-toc-padding-horizontal);
 }
@@ -2107,14 +1978,10 @@ hr:after {
     color: var(--ifm-toc-link-color);
 }
 
-.table-of-contents__link:hover,
-.table-of-contents__link:hover code,
-.table-of-contents__link--active,
-.table-of-contents__link--active code {
+.table-of-contents__link:hover, .table-of-contents__link:hover code, .table-of-contents__link--active, .table-of-contents__link--active code {
     color: var(--ifm-color-primary);
     text-decoration: none;
 }
-
 
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -2122,7 +1989,6 @@ hr:after {
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 .close {
     background: none;
     border: none;
@@ -2145,14 +2011,12 @@ hr:after {
     opacity: 0.8;
 }
 
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 .dropdown {
     display: inline-flex;
     font-weight: var(--ifm-dropdown-font-weight);
@@ -2160,8 +2024,7 @@ hr:after {
     vertical-align: top;
 }
 
-.dropdown--hoverable:hover .dropdown__menu,
-.dropdown--show .dropdown__menu {
+.dropdown--hoverable:hover .dropdown__menu, .dropdown--show .dropdown__menu {
     opacity: 1;
     transform: translateY(0);
     visibility: visible;
@@ -2205,19 +2068,17 @@ hr:after {
     white-space: nowrap;
 }
 
-.dropdown__link:hover,
-.dropdown__link--active {
+.dropdown__link:hover, .dropdown__link--active {
     background-color: var(--ifm-dropdown-hover-background-color);
     color: var(--ifm-dropdown-link-color);
     text-decoration: none;
 }
 
-.dropdown__link--active,
-.dropdown__link--active:hover {
+.dropdown__link--active, .dropdown__link--active:hover {
     --ifm-dropdown-link-color: var(--ifm-link-color);
 }
 
-.dropdown>.navbar__link:after {
+.dropdown > .navbar__link:after {
     border-color: currentColor transparent;
     border-style: solid;
     border-width: 0.4em 0.4em 0;
@@ -2229,14 +2090,12 @@ hr:after {
     transform: translateY(-50%);
 }
 
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 .footer {
     background-color: var(--ifm-footer-background-color);
     color: var(--ifm-footer-color);
@@ -2288,26 +2147,22 @@ hr:after {
     padding-left: 0;
 }
 
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 [type='checkbox'] {
     padding: 0;
 }
 
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 .hero {
     align-items: center;
     background-color: var(--ifm-hero-background-color);
@@ -2334,14 +2189,12 @@ hr:after {
     font-size: 1.5rem;
 }
 
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 .menu {
     font-weight: var(--ifm-font-weight-semibold);
     overflow-x: hidden;
@@ -2353,9 +2206,7 @@ hr:after {
     padding-left: 0;
 }
 
-
 /* Non-top level menus */
-
 .menu__list .menu__list {
     margin-left: var(--ifm-menu-link-padding-horizontal);
 }
@@ -2445,16 +2296,13 @@ hr:after {
     transition: opacity var(--ifm-transition-fast) linear;
 }
 
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
-html[data-theme='dark'],
-.navbar--dark {
+html[data-theme='dark'], .navbar--dark {
     --ifm-menu-link-sublist-icon-filter: invert(100%) sepia(94%) saturate(17%) hue-rotate(223deg) brightness(104%) contrast(98%);
 }
 
@@ -2467,8 +2315,7 @@ html[data-theme='dark'],
     width: 100%;
 }
 
-.navbar>.container,
-.navbar>.container-fluid {
+.navbar > .container, .navbar > .container-fluid {
     display: flex;
 }
 
@@ -2533,7 +2380,7 @@ html[data-theme='dark'],
     margin: 0;
 }
 
-.navbar__items--center+.navbar__items--right {
+.navbar__items--center + .navbar__items--right {
     flex: 1;
 }
 
@@ -2542,7 +2389,7 @@ html[data-theme='dark'],
     justify-content: flex-end;
 }
 
-.navbar__items--right> :last-child {
+.navbar__items--right > :last-child {
     padding-right: 0;
 }
 
@@ -2568,8 +2415,7 @@ html[data-theme='dark'],
     text-decoration: none;
 }
 
-.navbar__link:hover,
-.navbar__link--active {
+.navbar__link:hover, .navbar__link--active {
     color: var(--ifm-navbar-link-hover-color);
     text-decoration: none;
 }
@@ -2634,8 +2480,7 @@ html[data-theme='dark'],
     transition-timing-function: ease-in-out;
 }
 
-.navbar-sidebar--show .navbar-sidebar,
-.navbar-sidebar--show .navbar-sidebar__backdrop {
+.navbar-sidebar--show .navbar-sidebar, .navbar-sidebar--show .navbar-sidebar__backdrop {
     opacity: 1;
     visibility: visible;
 }
@@ -2671,14 +2516,12 @@ html[data-theme='dark'],
     padding: 0.5rem;
 }
 
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 .pagination {
     font-size: var(--ifm-pagination-font-size);
     padding-left: 0;
@@ -2708,7 +2551,7 @@ html[data-theme='dark'],
     margin-right: var(--ifm-pagination-page-spacing);
 }
 
-.pagination__item>span {
+.pagination__item > span {
     padding: var(--ifm-pagination-padding-vertical);
 }
 
@@ -2721,8 +2564,7 @@ html[data-theme='dark'],
     background: var(--ifm-pagination-item-active-background);
 }
 
-.pagination__item--disabled,
-.pagination__item[disabled] {
+.pagination__item--disabled, .pagination__item[disabled] {
     opacity: 0.25;
     pointer-events: none;
 }
@@ -2739,14 +2581,12 @@ html[data-theme='dark'],
     text-decoration: none;
 }
 
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 .pagination-nav {
     display: flex;
 }
@@ -2761,7 +2601,7 @@ html[data-theme='dark'],
     text-align: right;
 }
 
-.pagination-nav__item+.pagination-nav__item {
+.pagination-nav__item + .pagination-nav__item {
     margin-left: var(--ifm-spacing-horizontal);
 }
 
@@ -2792,14 +2632,12 @@ html[data-theme='dark'],
     margin-bottom: 0.25rem;
 }
 
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 .pills {
     font-weight: var(--ifm-font-weight-bold);
     padding-left: 0;
@@ -2831,7 +2669,7 @@ html[data-theme='dark'],
     margin-right: var(--ifm-pills-spacing);
 }
 
-.pills__item+.pills__item {
+.pills__item + .pills__item {
     margin-top: 0;
 }
 
@@ -2845,14 +2683,12 @@ html[data-theme='dark'],
     text-align: center;
 }
 
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 .tabs {
     color: var(--ifm-tabs-color);
     display: flex;
@@ -2893,17 +2729,13 @@ html[data-theme='dark'],
     justify-content: center;
 }
 
-
 /* Mode */
-
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 html[data-theme='dark'] {
     --ifm-color-emphasis-0: var(--ifm-color-gray-1000);
     --ifm-color-emphasis-100: var(--ifm-color-gray-900);
@@ -2940,63 +2772,80 @@ html[data-theme='dark'] {
     .row .col {
         /* Increase specificity. */
     }
+
     .row .col.col.col {
         --ifm-col-width: 100%;
         flex-basis: var(--ifm-col-width);
         margin-left: 0;
         max-width: var(--ifm-col-width);
     }
+
     .footer {
         --ifm-footer-padding-horizontal: 0
     }
+
     .footer__link-separator {
         display: none;
     }
+
     .footer__col {
         margin-bottom: calc(var(--ifm-spacing-vertical) * 3);
     }
+
     .footer__link-item {
         display: block;
     }
+
     .hero {
         padding-left: 0;
         padding-right: 0
     }
+
     .menu--responsive .menu__button {
         display: inherit
     }
+
     .menu--responsive:not(.menu--show) .menu__list {
         display: none;
         opacity: 0;
     }
-    .navbar>.container,
-    .navbar>.container-fluid {
+
+    .navbar > .container, .navbar > .container-fluid {
         padding: 0
     }
+
     .navbar__toggle {
         display: inherit
     }
+
     .navbar__item {
         display: none
     }
+
     .navbar__search-input {
         width: 9rem
     }
+
     .pills--block {
         flex-direction: column
     }
+
     .pills--block .pills__item:not(:first-child) {
         margin-top: var(--ifm-pills-spacing);
     }
+
     .pills--block .pills__item:not(:last-child) {
         margin-bottom: var(--ifm-pills-spacing);
     }
+
     .tabs--block {
         flex-direction: column
     }
+
     .tabs--block .tabs__item:not(:first-child) {
         margin-top: var(--ifm-tabs-spacing);
     }
+
     .tabs--block .tabs__item:not(:last-child) {
         margin-bottom: var(--ifm-tabs-spacing);
     }
@@ -3007,14 +2856,17 @@ html[data-theme='dark'] {
         height: var(--ifm-scrollbar-size);
         width: var(--ifm-scrollbar-size);
     }
+
     .thin-scrollbar::-webkit-scrollbar-track {
         background: var(--ifm-scrollbar-track-background-color);
         border-radius: 10px;
     }
+
     .thin-scrollbar::-webkit-scrollbar-thumb {
         background: var(--ifm-scrollbar-thumb-background-color);
         border-radius: 10px;
     }
+
     .thin-scrollbar::-webkit-scrollbar-thumb:hover {
         background: var(--ifm-scrollbar-thumb-hover-background-color);
     }
@@ -3024,36 +2876,35 @@ html[data-theme='dark'] {
     .table-of-contents {
         display: none
     }
+
     .footer {
         display: none
     }
+
     .menu {
         display: none
     }
+
     .navbar {
         display: none
     }
+
     .pagination-nav {
         display: none
     }
+
     .tabs {
         page-break-inside: avoid
     }
 }
 
-
 /* stylelint-disable docusaurus/copyright-header */
-
-
 /**
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
-
-
 /* You can override the default Infima variables here. */
-
 :root {
     --ifm-color-primary: #25c2a0;
     --ifm-color-primary-dark: rgb(33, 175, 144);
@@ -3076,21 +2927,17 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
-
 /**
  * Styles for NProgress
  * Copied over to remove unused styles for the spinner.
  * https://github.com/rstacruz/nprogress/blob/master/nprogress.css
  */
-
 #nprogress {
     pointer-events: none;
 }
@@ -3115,14 +2962,12 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
     transform: rotate(3deg) translate(0px, -4px);
 }
 
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 #docusaurus-base-url-issue-banner-container {
     display: none;
 }
@@ -3142,14 +2987,12 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
     box-shadow: var(--ifm-global-shadow-md);
 }
 
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 :root {
     --docusaurus-announcement-bar-height: auto;
 }
@@ -3174,7 +3017,7 @@ html[data-announcement-bar-initially-dismissed='true'] .announcementBar {
 }
 
 @media screen and (min-width: 1024px) {
-     :root {
+    :root {
         --docusaurus-announcement-bar-height: 30px;
     }
 }
@@ -3203,9 +3046,11 @@ html[data-announcement-bar-initially-dismissed='true'] .announcementBar {
     .announcementBarClose {
         width: 35px;
     }
+
     .announcementBarContent {
         width: auto;
     }
+
     .announcementBarCloseable {
         margin-right: 35px;
     }
@@ -3216,22 +3061,18 @@ html[data-announcement-bar-initially-dismissed='true'] .announcementBar {
     text-decoration: underline;
 }
 
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
-
 /**
  * Styles for React Toggle
  * copied over because we want to allow user to swizzle it and modify the css
  * and also to make sure its compatible with our dark mode
  * https://github.com/aaronshaf/react-toggle/blob/master/style.css
  */
-
 .react-toggle {
     touch-action: pan-x;
     position: relative;
@@ -3275,8 +3116,7 @@ html[data-announcement-bar-initially-dismissed='true'] .announcementBar {
     transition: opacity 0.25s ease;
 }
 
-[data-theme='dark'] .react-toggle .react-toggle-track-check,
-.react-toggle--checked .react-toggle-track-check {
+[data-theme='dark'] .react-toggle .react-toggle-track-check, .react-toggle--checked .react-toggle-track-check {
     opacity: 1;
     transition: opacity 0.25s ease;
 }
@@ -3293,8 +3133,7 @@ html[data-announcement-bar-initially-dismissed='true'] .announcementBar {
     transition: opacity 0.25s ease;
 }
 
-[data-theme='dark'] .react-toggle .react-toggle-track-x,
-.react-toggle--checked .react-toggle-track-x {
+[data-theme='dark'] .react-toggle .react-toggle-track-x, .react-toggle--checked .react-toggle-track-x {
     opacity: 0;
 }
 
@@ -3310,13 +3149,11 @@ html[data-announcement-bar-initially-dismissed='true'] .announcementBar {
     transition: all 0.25s ease;
 }
 
-[data-theme='dark'] .react-toggle .react-toggle-thumb,
-.react-toggle--checked .react-toggle-thumb {
+[data-theme='dark'] .react-toggle .react-toggle-thumb, .react-toggle--checked .react-toggle-thumb {
     left: 27px;
 }
 
-.react-toggle--focus .react-toggle-thumb,
-.react-toggle:hover .react-toggle-thumb {
+.react-toggle--focus .react-toggle-thumb, .react-toggle:hover .react-toggle-thumb {
     box-shadow: 0px 0px 2px 3px var(--ifm-color-primary);
 }
 
@@ -3324,14 +3161,12 @@ html[data-announcement-bar-initially-dismissed='true'] .announcementBar {
     box-shadow: 0px 0px 5px 5px var(--ifm-color-primary);
 }
 
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 .toggle {
     align-items: center;
     display: flex;
@@ -3344,28 +3179,24 @@ html[data-announcement-bar-initially-dismissed='true'] .announcementBar {
     position: absolute;
 }
 
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 .iconExternalLink {
     margin-left: 0.3rem;
     position: relative;
     top: 1px;
 }
 
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 .themedImage {
     display: none;
 }
@@ -3378,14 +3209,12 @@ html[data-theme='dark'] .themedImage--dark {
     display: initial;
 }
 
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 @media screen and (max-width: 997px) {
     .displayOnlyInLargeViewport {
         display: none !important;
@@ -3400,14 +3229,12 @@ html[data-theme='dark'] .themedImage--dark {
     transform: translate3d(0, calc(-100% - 2px), 0);
 }
 
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 .footerLogoLink {
     opacity: 0.5;
     transition: opacity var(--ifm-transition-fast) var(--ifm-transition-timing-default);
@@ -3417,28 +3244,23 @@ html[data-theme='dark'] .themedImage--dark {
     opacity: 1;
 }
 
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 body:not(.navigation-with-keyboard) *:not(input):focus {
     outline: none;
 }
 
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
-html,
-body {
+html, body {
     height: 100%;
 }
 
@@ -3452,22 +3274,16 @@ body {
     flex: 1 0 auto;
 }
 
-
 /* Docusaurus-specific utility classes */
-
 .docusaurus-mt-lg {
     margin-top: 3rem;
 }
 
-
 /* stylelint-disable docusaurus/copyright-header */
-
-
 /**
  * CSS files with the .module.css suffix will be treated as CSS modules
  * and scoped locally.
  */
-
 .heroBanner_src-pages-index-module {
     padding: 4rem 0;
     text-align: center;
@@ -3487,9 +3303,7 @@ body {
     justify-content: center;
 }
 
-
 /* stylelint-disable docusaurus/copyright-header */
-
 .features_src-components-HomepageFeatures-module {
     display: flex;
     align-items: center;
@@ -3502,29 +3316,27 @@ body {
     width: 200px;
 }
 
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
-.container {
+.container_node_modules-\@docusaurus-plugin-debug-src-theme-DebugLayout-styles-module {
     padding: 20px;
     padding-top: 80px;
     overflow-x: hidden;
     background-color: #18191a;
     color: white;
-    /* min-height: 100vh; */
+    min-height: 100vh;
 }
 
-.container code {
+.container_node_modules-\@docusaurus-plugin-debug-src-theme-DebugLayout-styles-module code {
     color: white;
     background-color: #444950;
 }
 
-.nav {
+.nav_node_modules-\@docusaurus-plugin-debug-src-theme-DebugLayout-styles-module {
     position: fixed;
     display: flex;
     justify-content: space-evenly;
@@ -3535,7 +3347,7 @@ body {
     z-index: 1;
 }
 
-.navlink {
+.navlink_node_modules-\@docusaurus-plugin-debug-src-theme-DebugLayout-styles-module {
     color: white;
     font-weight: 500;
     font-size: clamp(12px, 4vw, 16px);
@@ -3544,17 +3356,17 @@ body {
     padding: 6px 6px;
 }
 
-.navlink:hover {
+.navlink_node_modules-\@docusaurus-plugin-debug-src-theme-DebugLayout-styles-module:hover {
     text-decoration: none;
     background-color: #292a2b;
 }
 
-.active {
+.active_node_modules-\@docusaurus-plugin-debug-src-theme-DebugLayout-styles-module {
     background-color: #363739;
 }
 
 @media screen and (min-width: 800px) {
-    .nav {
+    .nav_node_modules-\@docusaurus-plugin-debug-src-theme-DebugLayout-styles-module {
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
@@ -3565,31 +3377,31 @@ body {
         border-right: 1px solid #606770;
         padding-top: 20px;
     }
-    .navlink {
+
+    .navlink_node_modules-\@docusaurus-plugin-debug-src-theme-DebugLayout-styles-module {
         width: 80%;
         margin-top: 20px;
         text-align: left;
     }
-    .container {
+
+    .container_node_modules-\@docusaurus-plugin-debug-src-theme-DebugLayout-styles-module {
         padding-top: 40px;
         float: right;
         width: calc(100% - 200px);
     }
 }
 
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
-.list {
+.list_node_modules-\@docusaurus-plugin-debug-src-theme-DebugRegistry-styles-module {
     padding: 0;
 }
 
-.listItem {
+.listItem_node_modules-\@docusaurus-plugin-debug-src-theme-DebugRegistry-styles-module {
     list-style: none;
     background-color: #242526;
     padding: 10px;
@@ -3597,19 +3409,17 @@ body {
     margin-bottom: 20px;
 }
 
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
-.list {
+.list_node_modules-\@docusaurus-plugin-debug-src-theme-DebugRoutes-styles-module {
     padding: 0;
 }
 
-.listItem {
+.listItem_node_modules-\@docusaurus-plugin-debug-src-theme-DebugRoutes-styles-module {
     list-style: none;
     background-color: #242526;
     padding: 10px;
@@ -3617,14 +3427,13 @@ body {
     margin-bottom: 20px;
 }
 
-.route {
+.route_node_modules-\@docusaurus-plugin-debug-src-theme-DebugRoutes-styles-module {
     margin-bottom: 10px;
 }
 
-.routeName {
+.routeName_node_modules-\@docusaurus-plugin-debug-src-theme-DebugRoutes-styles-module {
     color: #e06b6b;
 }
-
 
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -3632,16 +3441,15 @@ body {
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
-.sectionTitle {
+.sectionTitle_node_modules-\@docusaurus-plugin-debug-src-theme-DebugSiteMetadata-styles-module {
     margin-top: 20px;
 }
 
-.list {
+.list_node_modules-\@docusaurus-plugin-debug-src-theme-DebugSiteMetadata-styles-module {
     padding: 0;
 }
 
-.listItem {
+.listItem_node_modules-\@docusaurus-plugin-debug-src-theme-DebugSiteMetadata-styles-module {
     list-style: none;
     background-color: #242526;
     padding: 10px;
@@ -3649,23 +3457,21 @@ body {
     margin-bottom: 20px;
 }
 
-.version {
+.version_node_modules-\@docusaurus-plugin-debug-src-theme-DebugSiteMetadata-styles-module {
     float: right;
 }
 
-.name {
+.name_node_modules-\@docusaurus-plugin-debug-src-theme-DebugSiteMetadata-styles-module {
     font-weight: 800;
     color: #e06b6b;
 }
 
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 :root {
     --collapse-button-bg-color-dark: #2e333a;
 }
@@ -3682,15 +3488,18 @@ body {
         width: var(--doc-sidebar-width);
         transition: opacity 50ms ease;
     }
+
     .sidebarWithHideableNavbar {
         padding-top: 0;
     }
+
     .sidebarHidden {
         opacity: 0;
         height: 0;
         overflow: hidden;
         visibility: hidden;
     }
+
     .sidebarLogo {
         display: flex !important;
         align-items: center;
@@ -3700,23 +3509,29 @@ body {
         color: inherit !important;
         text-decoration: none !important;
     }
+
     .sidebarLogo img {
         margin-right: 0.5rem;
         height: 2rem;
     }
+
     .menu {
         flex-grow: 1;
         padding: 0.5rem;
     }
+
     .menuLinkText {
         cursor: initial;
     }
+
     .menuLinkText:hover {
         background: none;
     }
+
     .menuWithAnnouncementBar {
         margin-bottom: var(--docusaurus-announcement-bar-height);
     }
+
     .collapseSidebarButton {
         display: block !important;
         background-color: var(--ifm-button-background-color);
@@ -3726,24 +3541,26 @@ body {
         border-radius: 0;
         border: 1px solid var(--ifm-toc-border-color);
     }
+
     .collapseSidebarButtonIcon {
         transform: rotate(180deg);
         margin-top: 4px;
     }
+
     html[dir='rtl'] .collapseSidebarButtonIcon {
         transform: rotate(0);
     }
+
     html[data-theme='dark'] .collapseSidebarButton {
         background-color: var(--collapse-button-bg-color-dark);
     }
-    html[data-theme='dark'] .collapseSidebarButton:hover,
-    html[data-theme='dark'] .collapseSidebarButton:focus {
+
+    html[data-theme='dark'] .collapseSidebarButton:hover, html[data-theme='dark'] .collapseSidebarButton:focus {
         background-color: var(--ifm-color-emphasis-200);
     }
 }
 
-.sidebarLogo,
-.collapseSidebarButton {
+.sidebarLogo, .collapseSidebarButton {
     display: none;
 }
 
@@ -3772,14 +3589,12 @@ body {
     height: 0 !important;
 }
 
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 .codeBlockContainer {
     margin-bottom: var(--ifm-leading);
 }
@@ -3822,9 +3637,7 @@ body {
     transition: opacity 200ms ease-in-out;
 }
 
-.codeBlockTitle:hover+.codeBlockContent .copyButton,
-.codeBlockContent:hover>.copyButton,
-.copyButton:focus {
+.codeBlockTitle:hover + .codeBlockContent .copyButton, .codeBlockContent:hover > .copyButton, .copyButton:focus {
     opacity: 1;
 }
 
@@ -3843,14 +3656,12 @@ body {
     }
 }
 
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 .anchor {
     display: block;
     position: relative;
@@ -3863,11 +3674,9 @@ body {
     transition: opacity var(--ifm-transition-fast);
 }
 
-.hash-link:focus,
-*:hover>.hash-link {
+.hash-link:focus, *:hover > .hash-link {
     opacity: 1;
 }
-
 
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -3875,7 +3684,6 @@ body {
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 .enhancedAnchor {
     top: calc(var(--ifm-navbar-height) * -1 - 0.5rem);
 }
@@ -3885,14 +3693,12 @@ body {
     margin-bottom: calc(var(--ifm-leading-desktop) * var(--ifm-leading));
 }
 
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 :root {
     --doc-sidebar-width: 300px;
     --doc-sidebar-hidden-width: 30px;
@@ -3902,8 +3708,7 @@ body {
     display: flex;
 }
 
-.docPage,
-.docMainContainer {
+.docPage, .docMainContainer {
     display: flex;
     width: 100%;
 }
@@ -3913,9 +3718,11 @@ body {
         flex-grow: 1;
         max-width: calc(100% - var(--doc-sidebar-width));
     }
+
     .docMainContainerEnhanced {
         max-width: calc(100% - var(--doc-sidebar-hidden-width));
     }
+
     .docSidebarContainer {
         width: var(--doc-sidebar-width);
         margin-top: calc(-1 * var(--ifm-navbar-height));
@@ -3925,10 +3732,12 @@ body {
         -webkit-clip-path: inset(0);
         clip-path: inset(0);
     }
+
     .docSidebarContainerHidden {
         width: var(--doc-sidebar-hidden-width);
         cursor: pointer;
     }
+
     .collapsedDocSidebar {
         position: sticky;
         top: 0;
@@ -3939,25 +3748,27 @@ body {
         justify-content: center;
         transition: background-color var(--ifm-transition-fast) ease;
     }
-    .collapsedDocSidebar:hover,
-    .collapsedDocSidebar:focus {
+
+    .collapsedDocSidebar:hover, .collapsedDocSidebar:focus {
         background-color: var(--ifm-color-emphasis-200);
     }
+
     .expandSidebarButtonIcon {
         transform: rotate(0);
     }
+
     html[dir='rtl'] .expandSidebarButtonIcon {
         transform: rotate(180deg);
     }
-    html[data-theme='dark'] .collapsedDocSidebar:hover,
-    html[data-theme='dark'] .collapsedDocSidebar:focus {
+
+    html[data-theme='dark'] .collapsedDocSidebar:hover, html[data-theme='dark'] .collapsedDocSidebar:focus {
         background-color: var(--collapse-button-bg-color-dark);
     }
+
     .docItemWrapperEnhanced {
-        max-width: calc( var(--ifm-container-width) + var(--doc-sidebar-width)) !important;
+        max-width: calc( var(--ifm-container-width) + var(--doc-sidebar-width) ) !important;
     }
 }
-
 
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -3965,20 +3776,17 @@ body {
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 .iconEdit {
     margin-right: 0.3em;
     vertical-align: sub;
 }
 
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 .blogPostTitle {
     font-size: 3rem;
 }
@@ -3991,54 +3799,51 @@ body {
     flex-direction: column;
 }
 
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
-.sidebar {
+.sidebar_node_modules-\@docusaurus-theme-classic-lib-next-theme-BlogSidebar-styles-module {
     max-height: calc(100vh - (var(--ifm-navbar-height) + 2rem));
     overflow-y: auto;
     position: sticky;
     top: calc(var(--ifm-navbar-height) + 2rem);
 }
 
-.sidebarItemTitle {
+.sidebarItemTitle_node_modules-\@docusaurus-theme-classic-lib-next-theme-BlogSidebar-styles-module {
     font-size: var(--ifm-h3-font-size);
     font-weight: var(--ifm-font-weight-bold);
 }
 
-.sidebarItemList {
+.sidebarItemList_node_modules-\@docusaurus-theme-classic-lib-next-theme-BlogSidebar-styles-module {
     list-style: none;
     font-size: 0.9rem;
     padding-left: 0;
 }
 
-.sidebarItem {
+.sidebarItem_node_modules-\@docusaurus-theme-classic-lib-next-theme-BlogSidebar-styles-module {
     margin-top: 0.7rem;
 }
 
-.sidebarItemLink {
+.sidebarItemLink_node_modules-\@docusaurus-theme-classic-lib-next-theme-BlogSidebar-styles-module {
     color: var(--ifm-font-color-base);
 }
 
-.sidebarItemLink:hover {
+.sidebarItemLink_node_modules-\@docusaurus-theme-classic-lib-next-theme-BlogSidebar-styles-module:hover {
     text-decoration: none;
 }
 
-.sidebarItemLinkActive {
+.sidebarItemLinkActive_node_modules-\@docusaurus-theme-classic-lib-next-theme-BlogSidebar-styles-module {
     color: var(--ifm-color-primary);
 }
 
 @media only screen and (max-width: 996px) {
-    .sidebar {
+    .sidebar_node_modules-\@docusaurus-theme-classic-lib-next-theme-BlogSidebar-styles-module {
         display: none;
     }
 }
-
 
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -4046,7 +3851,6 @@ body {
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 .tableOfContents {
     max-height: calc(100vh - (var(--ifm-navbar-height) + 2rem));
     overflow-y: auto;
@@ -4058,11 +3862,11 @@ body {
     .tableOfContents {
         display: none;
     }
+
     .docItemContainer {
         padding: 0 0.3rem;
     }
 }
-
 
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -4070,8 +3874,7 @@ body {
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
-.docItemContainer header+* {
+.docItemContainer header + * {
     margin-top: 0;
 }
 
@@ -4085,11 +3888,11 @@ body {
     .docItemCol {
         max-width: 75% !important;
     }
+
     .lastUpdated {
         text-align: right;
     }
 }
-
 
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -4097,7 +3900,6 @@ body {
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 .mdxPageWrapper {
     justify-content: center;
 }
