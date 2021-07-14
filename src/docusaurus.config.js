@@ -1,4 +1,7 @@
-import Logo from 'components/Logo';
+import {
+  Avatar,
+  Logo,
+} from 'components';
 
 const config = {
   isClient: true,
@@ -24,10 +27,15 @@ const config = {
         hideOnScroll: false,
         items: [{
           type: 'doc',
-          // docId: 'intro',
           position: 'left',
           label: 'Docs',
           to: '/docs'
+        }, {
+          type: 'doc',
+          position: 'custom',
+          label: 'Docs',
+          to: '/docs',
+          renderer: Avatar,
         }],
       },
       hideableSidebar: true,

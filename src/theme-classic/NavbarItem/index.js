@@ -7,8 +7,13 @@ const NavbarItemComponents = {
   // doc: () => require('theme-classic/NavbarItem/DocNavbarItem').default,
 };
 
-const getNavbarItemComponent = (type = 'default') => {
+const getNavbarItemComponent = (type = "default", { position, renderer }) => {
+  if (position === "custom" && renderer) {
+    return renderer;
+  }
+
   const navbarItemComponent = NavbarItemComponents[type];
+
   if (!navbarItemComponent) {
     throw new Error(`No NavbarItem component found for type "${type}".`);
   }
@@ -16,8 +21,8 @@ const getNavbarItemComponent = (type = 'default') => {
   return navbarItemComponent();
 };
 
-const NavbarItem = ({ type, ...props }) => {
-  const NavbarItemComponent = getNavbarItemComponent(type);
+const NavbarItem = ({ type, renderer, ...props }) => {
+  const NavbarItemComponent = getNavbarItemComponent(type, { renderer, ...props });
 
   return (
     <NavbarItemComponent {...props} />

@@ -1,4 +1,4 @@
-const Logo = (props) => {
+export const Logo = (props) => {
   return (
     <svg
       width="32"

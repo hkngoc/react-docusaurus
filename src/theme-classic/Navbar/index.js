@@ -23,9 +23,14 @@ const splitNavItemsByPosition = (items) => {
   const rightItems = items.filter(
     (item) => (item.position ?? DefaultNavItemPosition) === 'right',
   );
+  const customItems = items.filter(
+    (item) => (item.position ?? DefaultNavItemPosition) === 'custom',
+  );
+
   return {
     leftItems,
     rightItems,
+    customItems,
   };
 };
 
@@ -69,7 +74,7 @@ const Navbar = () => {
   }, [windowSize]);
 
   // const hasSearchNavbarItem = items.some((item) => item.type === 'search');
-  const { leftItems, rightItems } = splitNavItemsByPosition(items);
+  const { leftItems, rightItems, customItems } = splitNavItemsByPosition(items);
 
   return (
     <nav
@@ -125,6 +130,11 @@ const Navbar = () => {
               onChange={onToggleChange}
             />
           )}
+          {
+            customItems.map((item, i) => (
+              <NavbarItem {...item} key={i} className={'displayOnlyInLargeViewport'} />
+            ))
+          }
         </div>
       </div>
       <div
@@ -143,11 +153,16 @@ const Navbar = () => {
           {!disableColorModeSwitch && sidebarShown && (
             <Toggle checked={isDarkTheme} onChange={onToggleChange} />
           )}
+          {
+            customItems.map((item, i) => (
+              <NavbarItem {...item} key={i} />
+            ))
+          }
         </div>
         <div className="navbar-sidebar__items">
           <div className="menu">
             <ul className="menu__list">
-              {items.map((item, i) => (
+              {items.filter((item) => ["left", "right"].includes(item.position)).map((item, i) => (
                 <NavbarItem
                   mobile
                   {...(item)} // TODO fix typing
