@@ -6,6 +6,8 @@ import {
 const config = {
   isClient: true,
   siteConfig: {
+    title: 'Docusaurus',
+    tagline: 'Dinosaurs are cool',
     themeConfig: {
       colorMode: {
         defaultMode: 'dark',
@@ -22,7 +24,7 @@ const config = {
         title: 'Docusaurus',
         logo: {
           src: Logo,
-          alt: 'My Site Logo',
+          alt: 'Docusaurus Logo',
         },
         hideOnScroll: false,
         items: [{

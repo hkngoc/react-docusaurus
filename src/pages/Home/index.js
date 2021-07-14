@@ -1,9 +1,15 @@
 import Layout from 'theme-classic/Layout';
 
+import Header from './Header';
+import Features from './Features';
+
 const Home = () => {
   return (
     <Layout>
-      <code>Home</code>
+      <Header />
+      <main>
+        <Features />
+      </main>
     </Layout>
   );
 };
