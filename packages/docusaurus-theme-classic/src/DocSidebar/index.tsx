@@ -24,8 +24,6 @@ import IconMenu from '../IconMenu';
 import IconArrow from '../IconArrow';
 import IconExternalLink from '../IconExternalLink';
 
-import './styles.css';
-
 const MOBILE_TOGGLE_SIZE = 24;
 
 const isActiveSidebarItem = (item, activePath, sidebarName) => {

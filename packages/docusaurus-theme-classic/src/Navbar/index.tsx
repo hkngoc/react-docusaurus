@@ -19,8 +19,6 @@ import Toggle from '../Toggle';
 import NavbarItem from '../NavbarItem';
 import IconMenu from '../IconMenu';
 
-import './styles.css';
-
 const DefaultNavItemPosition = 'right';
 
 const splitNavItemsByPosition = (items) => {

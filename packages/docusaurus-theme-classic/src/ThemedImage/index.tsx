@@ -11,8 +11,6 @@ import clsx from 'clsx';
 import useDocusaurusContext from '@docusaurus/core/lib/client/exports/useDocusaurusContext';
 import useThemeContext from '../hooks/useThemeContext';
 
-import './styles.css';
-
 const ThemedImage = (props) => {
   const { isClient } = useDocusaurusContext();
   // @ts-ignore

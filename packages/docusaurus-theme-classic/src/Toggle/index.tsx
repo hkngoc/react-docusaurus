@@ -11,8 +11,6 @@ import clsx from 'clsx';
 import useDocusaurusContext from '@docusaurus/core/lib/client/exports/useDocusaurusContext';
 import { useThemeConfig } from '..//hooks/useThemeConfig';
 
-import './styles.css';
-
 const Dark = ({icon, style}) => (
   <span className={clsx('toggle', 'dark')} style={style}>
     {icon}

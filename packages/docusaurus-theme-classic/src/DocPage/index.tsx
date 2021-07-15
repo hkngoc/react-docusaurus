@@ -18,8 +18,6 @@ import DocSidebar from '../DocSidebar';
 import IconArrow from '../IconArrow';
 import NotFound from '../NotFound';
 
-import './styles.css';
-
 const getSidebar = ({ docsSidebars, currentDocRoute }) => {
   const { sidebarName } = currentDocRoute;
 
