@@ -1,17 +1,16 @@
 import { useState, useCallback, useEffect, useRef, memo } from 'react';
 import clsx from 'clsx';
 
-import {
-  useThemeConfig,
-  isSamePath,
-  usePrevious,
-} from 'theme-common';
+import { useThemeConfig } from 'theme-classic/useThemeConfig';
+import { isSamePath } from '@docusaurus/theme-common/lib/utils/pathUtils';
+import { usePrevious } from '@docusaurus/theme-common/lib/utils/usePrevious'
+
 import useLockBodyScroll from 'theme-classic/hooks/useLockBodyScroll';
 import useWindowSize, { windowSizes } from 'theme-classic/hooks/useWindowSize';
-import isInternalUrl from 'theme-core/isInternalUrl';
-import Link from 'theme-core/Link';
-// import applyTrailingSlash from 'theme-core/applyTrailingSlash';
-import { useLocation } from 'theme-core/router';
+import isInternalUrl from '@docusaurus/core/lib/client/exports/isInternalUrl';
+import Link from '@docusaurus/core/lib/client/exports/Link';
+// import applyTrailingSlash from '@docusaurus/core/lib/client/exports/applyTrailingSlash';
+import { useLocation } from '@docusaurus/core/lib/client/exports/router';
 
 import Logo from 'theme-classic/Logo';
 import IconMenu from 'theme-classic/IconMenu';

@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import clsx from 'clsx';
 
-import { useThemeConfig } from 'theme-common';
+import { useThemeConfig } from 'theme-classic/useThemeConfig';
 import useThemeContext from 'theme-classic/hooks/useThemeContext';
 import useHideableNavbar from 'theme-classic/hooks/useHideableNavbar';
 import useLockBodyScroll from 'theme-classic/hooks/useLockBodyScroll';

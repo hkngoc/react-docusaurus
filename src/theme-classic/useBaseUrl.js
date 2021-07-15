@@ -1,5 +1,5 @@
-import useDocusaurusContext from './useDocusaurusContext';
-import { hasProtocol } from './isInternalUrl';
+import useDocusaurusContext from '@docusaurus/core/lib/client/exports/useDocusaurusContext';
+import { hasProtocol } from '@docusaurus/core/lib/client/exports/isInternalUrl';
 
 export const addBaseUrl = (siteUrl, baseUrl, url, { forcePrependBaseUrl = false, absolute = false } = {}) => {
   if (!url) {

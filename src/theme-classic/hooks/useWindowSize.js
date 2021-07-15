@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import ExecutionEnvironment from 'theme-core/ExecutionEnvironment';
+import ExecutionEnvironment from '@docusaurus/core/lib/client/exports/ExecutionEnvironment';
 
 const desktopThresholdWidth = 996;
 

@@ -3,7 +3,7 @@ import {
   Route,
 } from 'react-router-dom';
 
-import DocusaurusProvider from 'theme-core/DocusaurusProvider';
+import DocusaurusProvider from 'theme-classic/DocusaurusProvider';
 import DocPage from 'theme-classic/DocPage';
 
 import Home from 'pages/Home';
@@ -32,6 +32,7 @@ const Docusaurus = () => {
   return (
     <DocusaurusProvider
       config={config}
+      id={"__docusaurus"}
     >
       <Switch>
         <Route path="/:path" name="DocRouter" component={DocRouter} />

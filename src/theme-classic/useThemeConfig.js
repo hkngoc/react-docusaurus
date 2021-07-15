@@ -1,4 +1,4 @@
-import useDocusaurusContext from 'theme-core/useDocusaurusContext';
+import useDocusaurusContext from '@docusaurus/core/lib/client/exports/useDocusaurusContext';
 
 export const useThemeConfig = () => {
   const {

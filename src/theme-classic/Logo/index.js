@@ -1,7 +1,7 @@
-import useDocusaurusContext from 'theme-core/useDocusaurusContext';
-import useBaseUrl, { addBaseUrl } from 'theme-core/useBaseUrl';
+import useDocusaurusContext from '@docusaurus/core/lib/client/exports/useDocusaurusContext';
+import useBaseUrl, { addBaseUrl } from 'theme-classic/useBaseUrl';
 
-import Link from 'theme-core/Link';
+import Link from '@docusaurus/core/lib/client/exports/Link';
 import ThemedImage from 'theme-classic/ThemedImage';
 
 const Logo = (props) => {

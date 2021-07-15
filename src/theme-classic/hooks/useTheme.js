@@ -1,6 +1,7 @@
 import { useState, useCallback, useEffect } from 'react';
-import { useThemeConfig, createStorageSlot } from 'theme-common';
-import ExecutionEnvironment from 'theme-core/ExecutionEnvironment';
+import { useThemeConfig } from 'theme-classic/useThemeConfig';
+import { createStorageSlot } from '@docusaurus/theme-common/lib/utils/storageUtils';
+import ExecutionEnvironment from '@docusaurus/core/lib/client/exports/ExecutionEnvironment';
 
 const ThemeStorage = createStorageSlot('theme');
 

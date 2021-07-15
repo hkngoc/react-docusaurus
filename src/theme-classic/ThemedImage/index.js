@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 
-import useDocusaurusContext from 'theme-core/useDocusaurusContext';
+import useDocusaurusContext from '@docusaurus/core/lib/client/exports/useDocusaurusContext';
 import useThemeContext from 'theme-classic/hooks/useThemeContext';
 
 import './styles.css';

@@ -1,10 +1,10 @@
 import { useState, useCallback } from 'react';
 import clsx from 'clsx';
 
-import { useLocation, matchPath } from 'theme-core/router';
-import useDocusaurusContext from 'theme-core/useDocusaurusContext';
+import { useLocation, matchPath } from '@docusaurus/core/lib/client/exports/router';
+import useDocusaurusContext from '@docusaurus/core/lib/client/exports/useDocusaurusContext';
 
-import { ThemeClassNames } from 'theme-common';
+import { ThemeClassNames } from '@docusaurus/theme-common/lib/utils/ThemeClassNames';
 
 import Layout from 'theme-classic/Layout';
 import DocSidebar from 'theme-classic/DocSidebar';

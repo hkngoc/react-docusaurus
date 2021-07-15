@@ -1,11 +1,11 @@
 import { useRef, useState, useEffect } from 'react';
 import clsx from 'clsx';
 
-import isInternalUrl from 'theme-core/isInternalUrl';
-import useBaseUrl from 'theme-core/useBaseUrl';
-import { useLocation } from 'theme-core/router';
-import Link from 'theme-core/Link';
-import { isSamePath } from 'theme-common/utils/pathUtils';
+import isInternalUrl from '@docusaurus/core/lib/client/exports/isInternalUrl';
+import useBaseUrl from '@docusaurus/core/lib/client/exports/useBaseUrl';
+import { useLocation } from '@docusaurus/core/lib/client/exports/router';
+import Link from '@docusaurus/core/lib/client/exports/Link';
+import { isSamePath } from '@docusaurus/theme-common/lib/utils/pathUtils';
 
 import IconExternalLink from 'theme-classic/IconExternalLink';
 

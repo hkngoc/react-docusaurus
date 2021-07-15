@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 
-import useDocusaurusContext from 'theme-core/useDocusaurusContext';
-import Link from 'theme-core/Link';
+import useDocusaurusContext from '@docusaurus/core/lib/client/exports/useDocusaurusContext';
+import Link from '@docusaurus/core/lib/client/exports/Link';
 
 import './styles.css';
 
