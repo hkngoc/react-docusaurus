@@ -4,7 +4,7 @@ import clsx from 'clsx';
 import isInternalUrl from '@docusaurus/core/lib/client/exports/isInternalUrl';
 import useBaseUrl from '@docusaurus/core/lib/client/exports/useBaseUrl';
 import { useLocation } from '@docusaurus/core/lib/client/exports/router';
-import Link from '@docusaurus/core/lib/client/exports/Link';
+import { Link } from 'theme-classic/Link';
 import { isSamePath } from '@docusaurus/theme-common/lib/utils/pathUtils';
 
 import IconExternalLink from 'theme-classic/IconExternalLink';
@@ -34,7 +34,7 @@ const NavLink = ({
           href ? {
             href: prependBaseUrlToHref ? normalizedHref : href,
           } : {
-            isNavLink: true,
+            // isNavLink: true,
             activeClassName,
             to: toUrl,
             ...(

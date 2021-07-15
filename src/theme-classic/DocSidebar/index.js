@@ -8,7 +8,7 @@ import { usePrevious } from '@docusaurus/theme-common/lib/utils/usePrevious'
 import useLockBodyScroll from 'theme-classic/hooks/useLockBodyScroll';
 import useWindowSize, { windowSizes } from 'theme-classic/hooks/useWindowSize';
 import isInternalUrl from '@docusaurus/core/lib/client/exports/isInternalUrl';
-import Link from '@docusaurus/core/lib/client/exports/Link';
+import { Link } from 'theme-classic/Link';
 // import applyTrailingSlash from '@docusaurus/core/lib/client/exports/applyTrailingSlash';
 import { useLocation } from '@docusaurus/core/lib/client/exports/router';
 
