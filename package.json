@@ -1,6 +1,5 @@
 {
   "name": "react-docusaurus",
-  "private": true,
   "workspaces": [
     "./packages/*"
   ],
