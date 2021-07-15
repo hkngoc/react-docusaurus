@@ -78,6 +78,7 @@ const ToggleComponent = memo(({
 export const Toggle = (props) => {
   const {
     colorMode: {
+      // @ts-ignore
       switchConfig: { darkIcon, darkIconStyle, lightIcon, lightIconStyle },
     },
   } = useThemeConfig();

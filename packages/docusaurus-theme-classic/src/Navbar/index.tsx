@@ -44,17 +44,23 @@ const splitNavItemsByPosition = (items) => {
 export const Navbar = () => {
   const {
     navbar: {
+      // @ts-ignore
       items,
+      // @ts-ignore
       hideOnScroll,
+      // @ts-ignore
       style,
     },
     colorMode: {
+      // @ts-ignore
       disableSwitch: disableColorModeSwitch
     },
   } = useThemeConfig();
 
   const [ sidebarShown, setSidebarShown ] = useState(false);
+  // @ts-ignore
   const { isDarkTheme, setLightTheme, setDarkTheme } = useThemeContext();
+  // @ts-ignore
   const { navbarRef, isNavbarVisible } = useHideableNavbar(hideOnScroll);
 
   useLockBodyScroll(sidebarShown);

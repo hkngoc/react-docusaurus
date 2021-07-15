@@ -288,6 +288,7 @@ const DocSidebar = ({
   isHidden,
 }) => {
   const {
+    // @ts-ignore
     navbar: { hideOnScroll },
     hideableSidebar,
   } = useThemeConfig();

@@ -15,6 +15,7 @@ import './styles.css';
 
 const ThemedImage = (props) => {
   const { isClient } = useDocusaurusContext();
+  // @ts-ignore
   const { isDarkTheme } = useThemeContext();
   const { sources, className, alt = '', ...propsRest } = props;
 

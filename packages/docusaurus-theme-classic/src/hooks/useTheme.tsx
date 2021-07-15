@@ -10,7 +10,7 @@ import { useState, useCallback, useEffect } from 'react';
 import { createStorageSlot } from '@docusaurus/theme-common/lib/utils/storageUtils';
 import ExecutionEnvironment from '@docusaurus/core/lib/client/exports/ExecutionEnvironment';
 
-import { useThemeConfig } from '../hooks/useThemeConfig';
+import { useThemeConfig } from './useThemeConfig';
 
 const ThemeStorage = createStorageSlot('theme');
 
@@ -37,6 +37,7 @@ const storeTheme = (newTheme) => {
 
 const useTheme = () => {
   const {
+    //@ts-ignore
     colorMode: { defaultMode, disableSwitch, respectPrefersColorScheme },
   } = useThemeConfig();
   const [theme, setTheme] = useState(getInitialTheme(defaultMode));
