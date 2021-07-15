@@ -1,7 +1,7 @@
 import { useState, useRef, memo } from 'react';
 import clsx from 'clsx';
 
-import { useThemeConfig } from 'theme-classic/useThemeConfig';
+import { useThemeConfig } from 'theme-classic/hooks/useThemeConfig';
 import useDocusaurusContext from '@docusaurus/core/lib/client/exports/useDocusaurusContext';
 
 import './styles.css';

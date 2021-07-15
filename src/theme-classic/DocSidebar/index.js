@@ -1,7 +1,7 @@
 import { useState, useCallback, useEffect, useRef, memo } from 'react';
 import clsx from 'clsx';
 
-import { useThemeConfig } from 'theme-classic/useThemeConfig';
+import { useThemeConfig } from 'theme-classic/hooks/useThemeConfig';
 import { isSamePath } from '@docusaurus/theme-common/lib/utils/pathUtils';
 import { usePrevious } from '@docusaurus/theme-common/lib/utils/usePrevious'
 

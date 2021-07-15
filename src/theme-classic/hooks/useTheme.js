@@ -1,5 +1,5 @@
 import { useState, useCallback, useEffect } from 'react';
-import { useThemeConfig } from 'theme-classic/useThemeConfig';
+import { useThemeConfig } from 'theme-classic/hooks/useThemeConfig';
 import { createStorageSlot } from '@docusaurus/theme-common/lib/utils/storageUtils';
 import ExecutionEnvironment from '@docusaurus/core/lib/client/exports/ExecutionEnvironment';
 
