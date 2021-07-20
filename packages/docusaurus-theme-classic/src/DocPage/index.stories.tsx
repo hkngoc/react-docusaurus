@@ -58,7 +58,8 @@ const config = {
           type: 'doc',
           position: 'left',
           label: 'Docs',
-          to: '/docs'
+          to: '/docs',
+          // activeBasePath: 'docs',
         }],
       },
       hideableSidebar: true,

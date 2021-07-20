@@ -42,7 +42,7 @@ const NavLink = ({
           href ? {
             href: prependBaseUrlToHref ? normalizedHref : href,
           } : {
-            // isNavLink: true,
+            isNavLink: true,
             activeClassName,
             to: toUrl,
             ...(
