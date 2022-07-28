@@ -167,7 +167,11 @@ export const Navbar = () => {
           )}
           {
             customItems.map((item, i) => (
-              <NavbarItem {...item} key={i} />
+              <NavbarItem
+                mobile
+                {...item}
+                key={i}
+              />
             ))
           }
         </div>
