@@ -54,13 +54,31 @@ const config = {
           alt: 'Docusaurus Logo',
         },
         hideOnScroll: false,
-        items: [{
-          type: 'doc',
-          position: 'left',
-          label: 'Docs',
-          to: '/docs',
-          // activeBasePath: 'docs',
-        }],
+        items: [
+          {
+            type: 'doc',
+            position: 'left',
+            label: 'Docs',
+            to: '/docs',
+            // activeBasePath: 'docs',
+          },
+          {
+            type: 'doc',
+            position: 'left',
+            label: 'Docs 2',
+            // to: "#",
+            // to: '/docs',
+            items: [
+              {
+                type: 'doc',
+                position: 'left',
+                label: 'Item 1',
+                to: `/doc2/item1`,
+              }
+            ]
+            // activeBasePath: 'docs',
+          },
+        ],
       },
       hideableSidebar: true,
     }
@@ -74,6 +92,11 @@ const routes = [
     routes: [],
   },
   {
+    path: '/docs2',
+    sidebarName: 'docs',
+    routes: [],
+  },
+  {
     path: '/',
   },
 ];
@@ -82,6 +105,10 @@ const sidebars = {
   docs: [
     {
       label: 'Overview',
+      href: ''
+    },
+    {
+      label: 'Q1',
       href: ''
     },
   ],

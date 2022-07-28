@@ -17,8 +17,8 @@ export const Link = ({ isNavLink, to, href, activeClassName, isActive, 'data-noB
   const { siteConfig: { trailingSlash, baseUrl }, } = useDocusaurusContext();
 
   const targetLinkUnprefixed = to || href;
-  const targetLinkWithoutPathnameProtocol = targetLinkUnprefixed === null || targetLinkUnprefixed === void 0 ? void 0 : targetLinkUnprefixed.replace('pathname://', '');
-  const targetLink = applyTrailingSlash(targetLinkWithoutPathnameProtocol, { trailingSlash, baseUrl });
+  const targetLinkWithoutPathnameProtocol = targetLinkUnprefixed === null || targetLinkUnprefixed === undefined ? undefined : targetLinkUnprefixed.replace('pathname://', '');
+  const targetLink = applyTrailingSlash(targetLinkWithoutPathnameProtocol || '', { trailingSlash, baseUrl });
 
   const LinkComponent = isNavLink ? NavLink : RRLink;
 

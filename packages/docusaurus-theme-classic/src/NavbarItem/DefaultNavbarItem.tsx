@@ -107,6 +107,7 @@ const NavItemMobile = ({ items, position, className, ...props }) => {
       <NavLink
         role="button"
         className={navLinkClassNames(className, true)}
+        activeClassName={""}
         {...props}
         onClick={(e) => {
           e.preventDefault();
@@ -186,6 +187,7 @@ const NavItemDesktop = ({ items, position, className, ...props }) => {
         className={navLinkClassNames(className)}
         {...props}
         onClick={props.to ? undefined : (e) => e.preventDefault()}
+        activeClassName={""}
         onKeyDown={(e) => {
           if (e.key === 'Enter') {
             e.preventDefault();

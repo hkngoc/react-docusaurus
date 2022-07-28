@@ -9,7 +9,7 @@ import React, { useState, useRef, memo } from 'react';
 import clsx from 'clsx';
 
 import useDocusaurusContext from '@docusaurus/core/lib/client/exports/useDocusaurusContext';
-import { useThemeConfig } from '..//hooks/useThemeConfig';
+import { useThemeConfig } from '../hooks/useThemeConfig';
 
 const Dark = ({icon, style}) => (
   <span className={clsx('toggle', 'dark')} style={style}>
