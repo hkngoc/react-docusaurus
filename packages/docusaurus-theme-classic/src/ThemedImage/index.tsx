@@ -8,18 +8,18 @@
 import React from 'react';
 import clsx from 'clsx';
 
-import useDocusaurusContext from '@docusaurus/core/lib/client/exports/useDocusaurusContext';
-import useThemeContext from '../hooks/useThemeContext';
+import { useIsBrowser } from '@react-docusaurus/core';
+import { useColorMode } from '@react-docusaurus/theme-common';
 
 const ThemedImage = (props) => {
-  const { isClient } = useDocusaurusContext();
+  const isBrowser = useIsBrowser();
   // @ts-ignore
-  const { isDarkTheme } = useThemeContext();
+  const { colorMode } = useColorMode();
   const { sources, className, alt = '', ...propsRest } = props;
 
-  const clientThemes = isDarkTheme ? ['dark'] : ['light'];
+  const clientThemes = colorMode === 'dark' ? ['dark'] : ['light'];
 
-  const renderedSourceNames = isClient
+  const renderedSourceNames = isBrowser
     ? clientThemes
     : // We need to render both images on the server to avoid flash
       // See https://github.com/facebook/docusaurus/pull/3730

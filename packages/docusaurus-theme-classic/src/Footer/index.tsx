@@ -7,9 +7,24 @@
 
 import React from 'react';
 
-const Footer = () => {
+import clsx from 'clsx';
+import { useThemeConfig } from '@react-docusaurus/theme-common';
+
+const Footer = ({ style = undefined }) => {
+  const {footer} = useThemeConfig();
+
+  if (!footer) {
+    return null;
+  }
+
   return (
-    <div />
+    <footer
+      className={clsx('footer', {
+        'footer--dark': style === 'dark',
+      })}>
+      <div className="container container-fluid">
+      </div>
+    </footer>
   );
 };
 

@@ -6,36 +6,25 @@
  */
 
 import React from 'react';
+import ComponentTypes from './ComponentTypes';
 
-import DefaultNavbarItem from '../NavbarItem/DefaultNavbarItem';
-// import DocNavbarItem from '../NavbarItem/DocNavbarItem';
-
-const NavbarItemComponents = {
-  default: () => DefaultNavbarItem,
-  doc: () => DefaultNavbarItem,
-  // doc: () => require('../NavbarItem/DocNavbarItem').default,
-};
-
-const getNavbarItemComponent = (type = "default", { position, renderer }) => {
-  if (position === "custom" && renderer) {
-    return renderer;
+function normalizeComponentType(type, props: object) {
+  // Backward compatibility: navbar item with no type set
+  // but containing dropdown items should use the type "dropdown"
+  if (!type || type === 'default') {
+    return 'items' in props ? 'dropdown' : 'default';
   }
+  return type;
+}
 
-  const navbarItemComponent = NavbarItemComponents[type];
+const NavbarItem = ({type, ...props}): JSX.Element => {
+  const componentType = normalizeComponentType(type, props);
+  const NavbarItemComponent = ComponentTypes[componentType];
 
-  if (!navbarItemComponent) {
+  if (!NavbarItemComponent) {
     throw new Error(`No NavbarItem component found for type "${type}".`);
   }
-
-  return navbarItemComponent();
-};
-
-export const NavbarItem = ({ type, renderer, position, ...props }) => {
-  const NavbarItemComponent = getNavbarItemComponent(type, { renderer, position, ...props });
-
-  return (
-    <NavbarItemComponent {...props} />
-  );
-};
+  return <NavbarItemComponent {...(props as any)} />;
+}
 
 export default NavbarItem;

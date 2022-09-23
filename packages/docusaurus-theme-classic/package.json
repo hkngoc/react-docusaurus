@@ -5,7 +5,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/hkngoc/react-docusaurus",
-    "directory": "packages/theme-classic"
+    "directory": "packages/docusaurus-theme-classic"
   },
   "license": "MIT",
   "main": "dist/cjs/index.js",
@@ -28,14 +28,24 @@
     "README.md"
   ],
   "dependencies": {
-    "@docusaurus/core": "2.0.0-beta.3",
-    "@docusaurus/theme-common": "2.0.0-beta.3",
+    "@react-docusaurus/core": "2.1.0",
+    "@docusaurus/mdx-loader": "2.1.0",
+    "@docusaurus/module-type-aliases": "2.1.0",
+    "@docusaurus/plugin-content-blog": "2.1.0",
+    "@docusaurus/plugin-content-docs": "2.1.0",
+    "@docusaurus/plugin-content-pages": "2.1.0",
+    "@docusaurus/theme-common": "2.1.0",
+    "@docusaurus/theme-translations": "2.1.0",
+    "@docusaurus/types": "2.1.0",
+    "@docusaurus/utils": "2.1.0",
+    "@docusaurus/utils-common": "2.1.0",
+    "@docusaurus/utils-validation": "2.1.0",
     "clsx": "^1.1.1",
     "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",
-    "@docusaurus/module-type-aliases": "2.0.0-beta.3",
+    "@docusaurus/module-type-aliases": "2.1.0",
     "@storybook/addon-actions": "^6.1.9",
     "@storybook/addon-essentials": "^6.1.9",
     "@storybook/addon-knobs": "^6.1.9",

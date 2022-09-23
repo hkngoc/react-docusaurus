@@ -7,59 +7,76 @@
 
 import React from 'react';
 
-import useDocusaurusContext from '@docusaurus/core/lib/client/exports/useDocusaurusContext';
-import useBaseUrl, { addBaseUrl } from '../hooks/useBaseUrl';
+import { Link } from '@react-docusaurus/core';
+import { useBaseUrl } from '@react-docusaurus/core';
+import { useDocusaurusContext } from '@react-docusaurus/core';
+import { useThemeConfig } from '@react-docusaurus/theme-common';
 
-import { Link } from '../Link';
 import ThemedImage from '../ThemedImage';
+
+const LogoThemedImage = ({
+  logo,
+  alt,
+  imageClassName,
+}) => {
+  const sources = {
+    light: useBaseUrl(logo.src),
+    dark: useBaseUrl(logo.srcDark || logo.src),
+  };
+
+  const themedImage = (
+    <ThemedImage
+      className={logo.className}
+      sources={sources}
+      height={logo.height}
+      width={logo.width}
+      alt={alt}
+      style={logo.style}
+    />
+  );
+
+  // Is this extra div really necessary?
+  // introduced in https://github.com/facebook/docusaurus/pull/5666
+  return imageClassName ? (
+    <div className={imageClassName}>{themedImage}</div>
+  ) : (
+    themedImage
+  );
+};
 
 const Logo = (props) => {
   const {
-    siteConfig: {
-      title,
-      themeConfig: {
-        navbar: {
-          // @ts-ignore
-          title: navbarTitle,
-          // @ts-ignore
-          logo = { src: ''}
-        },
-      },
-      baseUrl = '/',
-      url: siteUrl,
-    },
-    isClient,
+    siteConfig: { title },
   } = useDocusaurusContext();
+  const {
+    // @ts-ignore
+    navbar: { title: navbarTitle, logo },
+  } = useThemeConfig();
+
 
   const { imageClassName, titleClassName, ...propsRest } = props;
-  const logoLink = useBaseUrl(logo.href || '/');
-  const sources = {
-    light: (typeof (logo.src) == "string") ? addBaseUrl(siteUrl, baseUrl, logo.src) : logo.src,
-    dark: (typeof (logo.srcDark) == "string" || typeof (logo.src) == "string") ? addBaseUrl(siteUrl, baseUrl, logo.srcDark || logo.src) : (logo.srcDark || logo.src),
-  };
+  const logoLink = useBaseUrl(logo?.href || '/');
 
+  // If visible title is shown, fallback alt text should be
+  // an empty string to mark the logo as decorative.
+  const fallbackAlt = navbarTitle ? '' : title;
+
+  // Use logo alt text if provided (including empty string),
+  // and provide a sensible fallback otherwise.
+  const alt = logo?.alt ?? fallbackAlt;
 
   return (
     <Link
       to={logoLink}
       {...propsRest}
-      {...(logo.target && {target: logo.target})}
-    >
-      {
-        logo.src && typeof (logo.src) == "string" && (
-          <ThemedImage
-            key={isClient}
-            className={imageClassName}
-            sources={sources}
-            alt={logo.alt || navbarTitle || title}
-          />
-        )
-      }
-      {
-        typeof (logo.src) == "function" && (
-          <logo.src className={imageClassName} />
-        )
-      }
+      {...(logo?.target && {target: logo.target})}>
+      {logo && (
+        <LogoThemedImage
+          logo={logo}
+          alt={alt}
+          imageClassName={imageClassName}
+        />
+      )}
       {navbarTitle != null && <b className={titleClassName}>{navbarTitle}</b>}
     </Link>
   );

@@ -6,7 +6,7 @@
  */
 
 import React from 'react';
-import DocusaurusContext from '@docusaurus/core/lib/client/exports/context';
+import { DocusaurusContext } from '@react-docusaurus/core';
 
 export const DocusaurusProvider = ({ config, id, children }) => {
   return (

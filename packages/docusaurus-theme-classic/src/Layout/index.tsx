@@ -8,28 +8,34 @@
 import React from 'react';
 import clsx from 'clsx';
 
-import LayoutProviders from '../LayoutProviders';
+import LayoutProvider from './Provider';
 
 import Navbar from '../Navbar';
 import Footer from '../Footer';
 
-export const Layout = (props) => {
-  const { children, noFooter, wrapperClassName, pageClassName } = props;
+export const Layout = (props): JSX.Element => {
+  const {
+    children,
+    noFooter,
+    wrapperClassName,
+    // pageClassName,
+  } = props;
 
   return (
-    <LayoutProviders>
+    <LayoutProvider>
       <Navbar />
       <div
         className={clsx(
           "main-wrapper",
+          "mainWrapper",
           wrapperClassName,
-          pageClassName,
+          // pageClassName,
         )}
       >
         {children}
       </div>
       {!noFooter && <Footer />}
-    </LayoutProviders>
+    </LayoutProvider>
   );
 };
 

@@ -1,12 +1,18 @@
 {
   "name": "react-docusaurus",
   "workspaces": [
-    "./packages/*"
+    "packages/*"
   ],
   "description": "Try to using Docusaurus as UI Framework",
   "repository": {
     "type": "git",
     "url": "https://github.com/hkngoc/react-docusaurus"
+  },
+  "scripts": {
+    "build-core": "npm run build --workspace=@react-docusaurus/core",
+    "build-common": "npm run build --workspace=@react-docusaurus/theme-common",
+    "build-classic": "npm run build --workspace=@react-docusaurus/theme-classic",
+    "storybook": "npm run storybook --workspace=@react-docusaurus/theme-classic"
   },
   "license": "MIT"
 }
